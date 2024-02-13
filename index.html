@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  
+  <title>hello</title>
+  <link rel="stylesheet" href="pt.css">
+</head>
+
+<body> 
+<div class ="crud">
+  <div class="head">
+    <h2>cruds</h2>
+    <p>prodcut management system</p>
+  </div>
+  <div class="input">
+    <input type="text" placeholder="tittle" id="tittle">
+    <div class="price">
+      <input onkeyup="gettotal()" type="number" placeholder="price" id="price">
+      <input onkeyup="gettotal()" type="number" placeholder="taxs" id="taxs">
+      <input onkeyup="gettotal()"type="number"placeholder="ads" id="ads">
+      <input onkeyup="gettotal()"type="number" placeholder="discound" id="discound">
+      <small id="total">345</small>
+      
+    </div>
+  
+    <input type="number" placeholder="count" id="count">
+    <input type="text" placeholder="category" id="cat">
+    <button   id="create"> create</button>
+ 
+  </div>
+  <div class="outputs">
+    <div class="searchbook">
+      <input onkeyup="searchdata(this.value)" type='text' placeholder="search" id="search">
+      <div class="btnsearch" >
+        <button onclick="getsearchmood(this.id)" id="searchbytittle">search by tittle</button>
+        <button onclick="getsearchmood(this.id)" id="searchbycatgoury">search by category</button>
+      </div>
+         <div id="deleteall"></div>
+        
+      </div>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>tittle</th>
+          <th>price</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>discount</th>
+          <th>total</th>
+          <th>count</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+        
+      
+      </table>
+     
+  </div>
+</div>
+<script src="pt.js"></script>
+ 
+</body>
+
+</html>
